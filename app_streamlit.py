@@ -28,11 +28,14 @@ with st.sidebar:
     st.subheader("Job description")
     jd_text = st.text_area("Paste a job description", height=200)
     if st.button("Run Initial Screen"):
-        result = matching_agent.run_turn(graph, st.session_state.thread_id, job_description=jd_text)
-        st.session_state.job_description = jd_text
-        st.session_state.shortlist = result["shortlist"]
-        st.session_state.round = result["round"]
-        st.session_state.chat_history.append(("assistant", result["messages"][-1].content))
+        if not jd_text.strip():
+            st.warning("Please paste a job description before running the screen.")
+        else:
+            result = matching_agent.run_turn(graph, st.session_state.thread_id, job_description=jd_text)
+            st.session_state.job_description = jd_text
+            st.session_state.shortlist = result["shortlist"]
+            st.session_state.round = result["round"]
+            st.session_state.chat_history.append(("assistant", result["messages"][-1].content))
 
     st.caption(f"Round: {st.session_state.round}")
 
@@ -55,5 +58,6 @@ if user_message:
         st.session_state.chat_history.append(("user", user_message))
         result = matching_agent.run_turn(graph, st.session_state.thread_id, user_message=user_message)
         st.session_state.shortlist = result["shortlist"]
+        st.session_state.round = result["round"]
         st.session_state.chat_history.append(("assistant", result["messages"][-1].content))
         st.rerun()

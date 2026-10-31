@@ -30,15 +30,22 @@ def main(out_path: str = "docs/demo_transcripts.md", checkpoint_path: str = "dat
     for scenario in scenarios.SCENARIOS:
         thread_id = f"demo-{scenario['name']}"
         lines = [f"## {scenario['name']}\n"]
+        remaining_turns = list(scenario["turns"])
 
-        jd_text = None
         if scenario["job_description_file"]:
             jd_text = Path("data/job_descriptions", scenario["job_description_file"]).read_text()
             lines.append(f"**Job description submitted:** `{scenario['job_description_file']}`\n")
-        result = matching_agent.run_turn(graph, thread_id, job_description=jd_text)
+            result = matching_agent.run_turn(graph, thread_id, job_description=jd_text)
+        else:
+            # No JD: run_turn requires job_description or user_message, so
+            # the scenario's own first turn (not a content-free call)
+            # starts it — avoids priming context with an answer to nothing.
+            first_turn = remaining_turns.pop(0)
+            lines.append(f"**User:** {first_turn}\n")
+            result = matching_agent.run_turn(graph, thread_id, user_message=first_turn)
         lines.append(f"**Agent:**\n{_as_blockquote(result['messages'][-1].content)}\n")
 
-        for turn in scenario["turns"]:
+        for turn in remaining_turns:
             lines.append(f"**User:** {turn}\n")
             result = matching_agent.run_turn(graph, thread_id, user_message=turn)
             lines.append(f"**Agent:**\n{_as_blockquote(result['messages'][-1].content)}\n")

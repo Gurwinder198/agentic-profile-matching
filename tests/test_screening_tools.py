@@ -78,6 +78,63 @@ def test_score_candidate_retries_on_internally_inconsistent_score(monkeypatch):
     assert result["score"] == 88.0
 
 
+def test_score_candidate_retries_when_only_musthave_scores_are_high(monkeypatch):
+    """Averaging over ALL criteria_scores (must-have and nice-to-have
+    together) can hide an inconsistent score when the nice-to-haves are
+    weak: a candidate who aces every must-have but lacks every
+    nice-to-have can average below 50 overall even though score=0 is
+    still a contradiction. The plausibility check must weigh must-have
+    criteria specifically, not a flat average."""
+    requirements = {
+        "must_have": ["React", "JavaScript"],
+        "nice_to_have": ["TypeScript", "Next.js", "GraphQL"],
+        "role_title": "Frontend Engineer",
+        "seniority": "",
+    }
+    inconsistent = screening_tools.CandidateScore(
+        candidate_id="c1", score=0.0,
+        criteria_scores={"React": 100.0, "JavaScript": 100.0, "TypeScript": 0.0, "Next.js": 0.0, "GraphQL": 0.0},
+        strengths=["Strong React and JavaScript"], gaps=["No TypeScript", "No Next.js", "No GraphQL"])
+    consistent = screening_tools.CandidateScore(
+        candidate_id="c1", score=70.0,
+        criteria_scores={"React": 100.0, "JavaScript": 100.0, "TypeScript": 0.0, "Next.js": 0.0, "GraphQL": 0.0},
+        strengths=["Strong React and JavaScript"], gaps=["No TypeScript", "No Next.js", "No GraphQL"])
+    responses = iter([inconsistent, consistent])
+
+    class FakeStructuredModel:
+        def invoke(self, prompt):
+            return next(responses)
+
+    class FakeChatModel:
+        def with_structured_output(self, schema, method=None):
+            return FakeStructuredModel()
+
+    monkeypatch.setattr(screening_tools, "get_chat_model", lambda: FakeChatModel())
+
+    result = screening_tools.score_candidate(requirements, "c1", "resume text")
+    assert result["score"] == 70.0
+
+
+def test_score_candidate_warns_when_retries_exhausted_without_a_plausible_result(monkeypatch):
+    requirements = {"must_have": ["React"], "nice_to_have": [], "role_title": "", "seniority": ""}
+    always_inconsistent = screening_tools.CandidateScore(
+        candidate_id="c1", score=0.0, criteria_scores={"React": 100.0}, strengths=["Strong React"], gaps=[])
+
+    class FakeStructuredModel:
+        def invoke(self, prompt):
+            return always_inconsistent
+
+    class FakeChatModel:
+        def with_structured_output(self, schema, method=None):
+            return FakeStructuredModel()
+
+    monkeypatch.setattr(screening_tools, "get_chat_model", lambda: FakeChatModel())
+
+    with pytest.warns(UserWarning, match="implausible"):
+        result = screening_tools.score_candidate(requirements, "c1", "resume text", max_attempts=2)
+    assert result["score"] == 0.0
+
+
 @requires_api_key
 def test_generate_interview_questions_returns_at_least_three(sample_requirements):
     questions = screening_tools.generate_interview_questions(

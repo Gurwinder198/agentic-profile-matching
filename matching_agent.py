@@ -113,13 +113,22 @@ def agent_router_node(state: AgentState) -> dict:
     updates = {
         "requirements": state.get("requirements", {}),
         "shortlist": state.get("shortlist", []),
+        "round": state.get("round", "initial_screen"),
+        "final_recommendations": list(state.get("final_recommendations", [])),
     }
 
     @tool
     def compare_candidates_tool(candidate_ids: list[str]) -> str:
         """Compare two or more candidates from the current shortlist side by side."""
-        found = [c for c in (find_candidate(updates["shortlist"], cid) for cid in candidate_ids) if c]
+        found = []
+        missing = []
+        for cid in candidate_ids:
+            candidate = find_candidate(updates["shortlist"], cid)
+            (found if candidate else missing).append(candidate or cid)
         result = screening_tools.compare_candidates(found)
+        if missing:
+            note = f"No matching candidates found for: {', '.join(missing)}."
+            return f"{note} {result['narrative']}".strip()
         return result["narrative"]
 
     @tool
@@ -149,6 +158,10 @@ def agent_router_node(state: AgentState) -> dict:
         if candidate is None:
             return "No matching candidate found."
         rec = screening_tools.generate_final_recommendation(candidate)
+        updates["final_recommendations"] = [
+            r for r in updates["final_recommendations"] if r["candidate_id"] != rec["candidate_id"]
+        ] + [rec]
+        updates["round"] = "final_recommendation"
         return f"{rec['decision'].upper()} (confidence {rec['confidence']}): {rec['justification']}"
 
     @tool
@@ -189,6 +202,15 @@ def agent_router_node(state: AgentState) -> dict:
         hits = rag_tools.rag_search_resumes(query, k=10)
         return "\n".join(f"{h['candidate_id']} (score {h['score']:.3f}): {h['snippet']}" for h in hits)
 
+    @tool
+    def search_resumes_by_keyword_tool(keyword: str) -> str:
+        """Search resume filenames by an exact keyword match (case-insensitive),
+        as a precise complement to the fuzzy semantic rag_search_tool."""
+        matches = filesystem_tools.search_resumes_by_keyword(keyword)
+        if not matches:
+            return f"No resumes found containing {keyword!r}."
+        return ", ".join(m.removesuffix(".txt") for m in matches)
+
     tools = [
         compare_candidates_tool,
         explain_ranking_tool,
@@ -196,6 +218,7 @@ def agent_router_node(state: AgentState) -> dict:
         generate_final_recommendation_tool,
         rerank_candidates_tool,
         rag_search_tool,
+        search_resumes_by_keyword_tool,
     ]
     tools_by_name = {t.name: t for t in tools}
 
@@ -207,7 +230,9 @@ def agent_router_node(state: AgentState) -> dict:
         "use rag_search_tool to search the resume corpus directly."
         "\nIf a tool result says 'No matching candidates found' or "
         "'No matching candidate found', relay that exact phrase to the "
-        "user rather than paraphrasing it."
+        "user rather than paraphrasing it. If a tool result mentions "
+        "candidates that 'Entered shortlist' or 'Left shortlist', relay "
+        "those exact lines to the user too, not just the new ranking."
     )
     conversation = [SystemMessage(system_prompt)] + list(state.get("messages", []))
     turn_start = len(conversation)
@@ -218,8 +243,11 @@ def agent_router_node(state: AgentState) -> dict:
         if not getattr(ai_message, "tool_calls", None):
             break
         for call in ai_message.tool_calls:
-            tool_fn = tools_by_name[call["name"]]
-            result = tool_fn.invoke(call["args"])
+            try:
+                tool_fn = tools_by_name[call["name"]]
+                result = tool_fn.invoke(call["args"])
+            except Exception as exc:  # noqa: BLE001 - deliberately broad: feed any tool failure back to the model
+                result = f"Tool call failed: {exc}"
             conversation.append(ToolMessage(content=str(result), tool_call_id=call["id"]))
 
     new_messages = conversation[turn_start:]
@@ -227,6 +255,8 @@ def agent_router_node(state: AgentState) -> dict:
         "messages": new_messages,
         "requirements": updates["requirements"],
         "shortlist": updates["shortlist"],
+        "round": updates["round"],
+        "final_recommendations": updates["final_recommendations"],
     }
 
 
@@ -269,6 +299,10 @@ def run_turn(
     """Run one conversational turn: either a fresh/replaced job description
     (restarts the fixed pipeline) or a follow-up chat message (routes to
     the conversational tool loop)."""
+    if job_description is None and not user_message:
+        raise ValueError("run_turn requires either job_description or user_message")
+    if job_description is not None and not job_description.strip():
+        raise ValueError("job_description must not be blank")
     config = {"configurable": {"thread_id": thread_id}}
     if job_description is not None:
         input_state = {

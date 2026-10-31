@@ -5,6 +5,7 @@ Every function here is plain and state-agnostic; orchestration that reads
 or writes LangGraph AgentState lives in matching_agent.py instead.
 """
 
+import warnings
 from typing import Literal
 
 from pydantic import BaseModel
@@ -68,14 +69,23 @@ def update_requirements(current_requirements: dict, new_instruction: str) -> dic
     return result.model_dump()
 
 
-def _score_is_plausible(data: dict) -> bool:
+def _score_is_plausible(data: dict, requirements: dict | None = None) -> bool:
     """The LLM occasionally returns an internally-inconsistent score (e.g.
     score=0 despite high per-criterion scores and no gaps) — catch the
-    clearest case of that self-contradiction."""
+    clearest case of that self-contradiction.
+
+    Weighing must-have criteria specifically (not a flat average over
+    every criterion) matters: a candidate who aces every must-have but
+    lacks every nice-to-have can average well below 50 overall even
+    though score=0 is still a contradiction — the must-have scores are
+    the ones that actually determine whether score=0 makes sense.
+    """
     criteria_scores = data.get("criteria_scores") or {}
     if not criteria_scores:
         return True
-    average = sum(criteria_scores.values()) / len(criteria_scores)
+    must_have = set((requirements or {}).get("must_have", []))
+    relevant = {k: v for k, v in criteria_scores.items() if k in must_have} or criteria_scores
+    average = sum(relevant.values()) / len(relevant)
     if data.get("score") == 0 and average >= 50:
         return False
     return True
@@ -97,8 +107,13 @@ def score_candidate(requirements: dict, candidate_id: str, resume_text: str, max
     for _ in range(max_attempts):
         result = model.invoke(prompt)
         data = result.model_dump()
-        if _score_is_plausible(data):
+        if _score_is_plausible(data, requirements):
             return data
+    warnings.warn(
+        f"score_candidate({candidate_id!r}): returning an implausible score "
+        f"after {max_attempts} attempts (score={data.get('score')}, "
+        f"criteria_scores={data.get('criteria_scores')})"
+    )
     return data
 
 
@@ -117,13 +132,22 @@ def _suggest_improvements(requirements: dict, scored: dict) -> list[str]:
     return [line for line in lines if line]
 
 
+def _is_borderline(score: float) -> bool:
+    """Candidates scored low enough to have real gaps but not so low
+    they're a clear reject. Widened from an original 60-75 band after
+    observing that real LLM-assigned scores cluster at coarse values
+    (0 / 30 / 40 / 85 / 90 / 95) that almost never land inside a narrow
+    15-point band — the original band fired on 0/7 real screens."""
+    return 20 <= score < 60
+
+
 def rank_candidates(requirements: dict, candidates: list[dict]) -> list[dict]:
     """Score every candidate, sort descending by score, and add
     improvement suggestions for borderline candidates."""
     scored = []
     for candidate in candidates:
         result = score_candidate(requirements, candidate["candidate_id"], candidate["resume_text"])
-        if 60 <= result["score"] < 75:
+        if _is_borderline(result["score"]):
             result["improvement_suggestions"] = _suggest_improvements(requirements, result)
         else:
             result["improvement_suggestions"] = []

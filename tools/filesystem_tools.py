@@ -11,10 +11,22 @@ def list_resume_files(data_dir: str = "data/resumes") -> list[str]:
 
 
 def read_resume_file(filename: str, data_dir: str = "data/resumes") -> str:
-    """Read a single resume file's content by filename, guarding path traversal."""
+    """Read a single resume file's content by filename, guarding path traversal.
+
+    Character checks alone ("/", "\\", leading ".") are not sufficient on
+    Windows: a drive-relative segment like "C:secret.txt" contains none of
+    them, but Path(data_dir) / "C:secret.txt" discards a relative data_dir
+    entirely and resolves against the cwd instead. The containment check
+    below (resolve both paths, require the result's parent to equal the
+    resolved base) catches that case regardless of platform or form.
+    """
     if "/" in filename or "\\" in filename or filename.startswith("."):
         raise ValueError(f"invalid filename: {filename!r}")
-    return (Path(data_dir) / filename).read_text(encoding="utf-8")
+    base = Path(data_dir).resolve()
+    target = (base / filename).resolve()
+    if target.parent != base:
+        raise ValueError(f"invalid filename: {filename!r}")
+    return target.read_text(encoding="utf-8")
 
 
 def search_resumes_by_keyword(keyword: str, data_dir: str = "data/resumes") -> list[str]:
