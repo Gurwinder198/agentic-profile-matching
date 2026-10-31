@@ -1,0 +1,16 @@
+Name: Karen Kim
+Candidate ID: C020
+Role: Frontend Engineer
+Years of Experience: 7
+
+Summary:
+Frontend Engineer with 7 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Vue, Tailwind CSS
+
+Experience:
+- Bluepeak Software — Frontend Engineer, 7 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.A. Information Systems, Lakeside University

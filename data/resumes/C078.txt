@@ -1,0 +1,16 @@
+Name: Uma Nelson
+Candidate ID: C078
+Role: Data Scientist
+Years of Experience: 7
+
+Summary:
+Data Scientist with 7 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, Scikit-learn, TensorFlow, PyTorch, SQL, Pandas, Deep Learning
+
+Experience:
+- Bluepeak Software — Data Scientist, 7 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- M.S. Computer Science, State University

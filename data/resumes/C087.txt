@@ -1,0 +1,16 @@
+Name: Sam Rivera
+Candidate ID: C087
+Role: DevOps Engineer
+Years of Experience: 5
+
+Summary:
+DevOps Engineer with 5 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Terraform, Ansible, Linux
+
+Experience:
+- Bluepeak Software — DevOps Engineer, 5 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.A. Information Systems, State University

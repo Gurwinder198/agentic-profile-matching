@@ -1,0 +1,16 @@
+Name: Carol Smith
+Candidate ID: C010
+Role: Data Scientist
+Years of Experience: 3
+
+Summary:
+Data Scientist with 3 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, Scikit-learn, SQL, PyTorch
+
+Experience:
+- Bluepeak Software — Data Scientist, 3 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- B.A. Information Systems, Lakeside University

@@ -1,0 +1,16 @@
+Name: Uma Allen
+Candidate ID: C096
+Role: Frontend Engineer
+Years of Experience: 9
+
+Summary:
+Frontend Engineer with 9 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Redux, Vue, TypeScript, Next.js, Tailwind CSS, Webpack, GraphQL
+
+Experience:
+- Alloy Digital — Frontend Engineer, 9 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.S. Computer Science, Tech Institute

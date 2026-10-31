@@ -1,0 +1,16 @@
+Name: Tara Allen
+Candidate ID: C011
+Role: Product Manager
+Years of Experience: 8
+
+Summary:
+Product Manager with 8 years of experience in Roadmapping, Agile, Stakeholder Management.
+
+Skills: Roadmapping, Agile, Stakeholder Management, JIRA, Wireframing
+
+Experience:
+- Cedar Analytics — Product Manager, 8 years
+  Worked on projects involving Roadmapping, Agile, Stakeholder Management.
+
+Education:
+- B.S. Computer Science, State University

@@ -1,0 +1,16 @@
+Name: Victor Nguyen
+Candidate ID: C100
+Role: Frontend Engineer
+Years of Experience: 0
+
+Summary:
+Frontend Engineer with 0 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Next.js, Redux, TypeScript, Vue, Webpack
+
+Experience:
+- Northwind Labs — Frontend Engineer, 0 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- M.S. Computer Science, Tech Institute

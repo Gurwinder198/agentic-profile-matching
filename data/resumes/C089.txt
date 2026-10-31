@@ -1,0 +1,16 @@
+Name: Olivia Walker
+Candidate ID: C089
+Role: DevOps Engineer
+Years of Experience: 9
+
+Summary:
+DevOps Engineer with 9 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Azure, Ansible, Terraform, Kubernetes
+
+Experience:
+- Alloy Digital — DevOps Engineer, 9 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- M.S. Computer Science, Lakeside University

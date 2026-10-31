@@ -1,0 +1,13 @@
+Data Scientist
+
+We are looking for a Data Scientist to drive insights from our data.
+
+Must-have:
+- Strong Python experience
+- Experience with Machine Learning
+- Solid grounding in Statistics
+
+Nice-to-have:
+- Experience with Pandas and Scikit-learn
+- Experience with Deep Learning or NLP
+- Familiarity with TensorFlow or PyTorch

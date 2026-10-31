@@ -1,0 +1,16 @@
+Name: Rosa Patel
+Candidate ID: C018
+Role: Product Manager
+Years of Experience: 15
+
+Summary:
+Product Manager with 15 years of experience in Roadmapping, Agile, Stakeholder Management.
+
+Skills: Roadmapping, Agile, Stakeholder Management, User Research, JIRA, A/B Testing
+
+Experience:
+- Bluepeak Software — Product Manager, 15 years
+  Worked on projects involving Roadmapping, Agile, Stakeholder Management.
+
+Education:
+- B.S. Data Science, Lakeside University

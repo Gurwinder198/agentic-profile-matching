@@ -1,0 +1,16 @@
+Name: Nathan Walker
+Candidate ID: C019
+Role: Backend Engineer
+Years of Experience: 13
+
+Summary:
+Backend Engineer with 13 years of experience in Python, REST APIs, SQL.
+
+Skills: Python, REST APIs, SQL, Django, Microservices
+
+Experience:
+- Alloy Digital — Backend Engineer, 13 years
+  Worked on projects involving Python, REST APIs, SQL.
+
+Education:
+- B.S. Data Science, State University

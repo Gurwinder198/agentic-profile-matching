@@ -1,0 +1,16 @@
+Name: Bob Brown
+Candidate ID: C017
+Role: Frontend Engineer
+Years of Experience: 2
+
+Summary:
+Frontend Engineer with 2 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Tailwind CSS, GraphQL
+
+Experience:
+- Northwind Labs — Frontend Engineer, 2 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- M.S. Computer Science, State University

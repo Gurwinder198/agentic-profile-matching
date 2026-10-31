@@ -1,0 +1,16 @@
+Name: Grace Nelson
+Candidate ID: C080
+Role: DevOps Engineer
+Years of Experience: 4
+
+Summary:
+DevOps Engineer with 4 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Terraform, Linux, Ansible, Monitoring, Azure
+
+Experience:
+- Northwind Labs — DevOps Engineer, 4 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- M.S. Computer Science, Lakeside University

@@ -1,0 +1,16 @@
+Name: Maria Davis
+Candidate ID: C008
+Role: Frontend Engineer
+Years of Experience: 2
+
+Summary:
+Frontend Engineer with 2 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, GraphQL, TypeScript, Next.js
+
+Experience:
+- Bluepeak Software — Frontend Engineer, 2 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- M.S. Computer Science, Tech Institute

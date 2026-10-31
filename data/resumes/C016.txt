@@ -1,0 +1,16 @@
+Name: Carol Lee
+Candidate ID: C016
+Role: DevOps Engineer
+Years of Experience: 0
+
+Summary:
+DevOps Engineer with 0 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Azure, Jenkins, Linux, Ansible, Kubernetes, Monitoring, Terraform
+
+Experience:
+- Cedar Analytics — DevOps Engineer, 0 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.A. Information Systems, Tech Institute

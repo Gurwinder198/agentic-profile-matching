@@ -1,0 +1,16 @@
+Name: Elena Patel
+Candidate ID: C047
+Role: Backend Engineer
+Years of Experience: 7
+
+Summary:
+Backend Engineer with 7 years of experience in Python, REST APIs, SQL.
+
+Skills: Python, REST APIs, SQL, PostgreSQL, Redis, Go, Django
+
+Experience:
+- Alloy Digital — Backend Engineer, 7 years
+  Worked on projects involving Python, REST APIs, SQL.
+
+Education:
+- B.A. Information Systems, Tech Institute

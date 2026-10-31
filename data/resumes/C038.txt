@@ -1,0 +1,16 @@
+Name: Maria Torres
+Candidate ID: C038
+Role: Frontend Engineer
+Years of Experience: 6
+
+Summary:
+Frontend Engineer with 6 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Vue, Next.js, Tailwind CSS, GraphQL, Webpack, TypeScript
+
+Experience:
+- Riverstone Systems — Frontend Engineer, 6 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.S. Computer Science, Lakeside University

@@ -1,0 +1,16 @@
+Name: Elena Allen
+Candidate ID: C081
+Role: Data Scientist
+Years of Experience: 15
+
+Summary:
+Data Scientist with 15 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, TensorFlow, Pandas, NLP, SQL, PyTorch, Scikit-learn
+
+Experience:
+- Riverstone Systems — Data Scientist, 15 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- M.S. Computer Science, Lakeside University

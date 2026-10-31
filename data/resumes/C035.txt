@@ -1,0 +1,16 @@
+Name: Maria Smith
+Candidate ID: C035
+Role: Data Scientist
+Years of Experience: 15
+
+Summary:
+Data Scientist with 15 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, NLP, Deep Learning, Pandas
+
+Experience:
+- Bluepeak Software — Data Scientist, 15 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- B.A. Information Systems, Lakeside University

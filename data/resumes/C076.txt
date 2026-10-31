@@ -1,0 +1,16 @@
+Name: Karen Kim
+Candidate ID: C076
+Role: DevOps Engineer
+Years of Experience: 12
+
+Summary:
+DevOps Engineer with 12 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Jenkins, Monitoring
+
+Experience:
+- Cedar Analytics — DevOps Engineer, 12 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Computer Science, Lakeside University

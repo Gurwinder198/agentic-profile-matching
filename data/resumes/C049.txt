@@ -1,0 +1,16 @@
+Name: Maria Young
+Candidate ID: C049
+Role: DevOps Engineer
+Years of Experience: 7
+
+Summary:
+DevOps Engineer with 7 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Jenkins, Monitoring
+
+Experience:
+- Alloy Digital — DevOps Engineer, 7 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.A. Information Systems, Riverside College

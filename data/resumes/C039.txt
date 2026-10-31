@@ -1,0 +1,16 @@
+Name: Victor Lee
+Candidate ID: C039
+Role: Frontend Engineer
+Years of Experience: 10
+
+Summary:
+Frontend Engineer with 10 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, GraphQL, Webpack, Redux, Next.js, Tailwind CSS, TypeScript
+
+Experience:
+- Northwind Labs — Frontend Engineer, 10 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- M.S. Computer Science, Riverside College

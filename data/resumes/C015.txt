@@ -1,0 +1,16 @@
+Name: Isabel Wright
+Candidate ID: C015
+Role: Frontend Engineer
+Years of Experience: 13
+
+Summary:
+Frontend Engineer with 13 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Vue, TypeScript, Webpack, Redux, Tailwind CSS, GraphQL, Next.js
+
+Experience:
+- Bluepeak Software — Frontend Engineer, 13 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.A. Information Systems, Riverside College

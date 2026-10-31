@@ -1,0 +1,16 @@
+Name: Wendy Allen
+Candidate ID: C070
+Role: DevOps Engineer
+Years of Experience: 2
+
+Summary:
+DevOps Engineer with 2 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Ansible, Linux, Jenkins, Kubernetes, Azure, Terraform, Monitoring
+
+Experience:
+- Bluepeak Software — DevOps Engineer, 2 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- M.S. Computer Science, Tech Institute

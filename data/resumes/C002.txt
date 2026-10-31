@@ -1,0 +1,16 @@
+Name: Henry Wright
+Candidate ID: C002
+Role: Frontend Engineer
+Years of Experience: 0
+
+Summary:
+Frontend Engineer with 0 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, TypeScript, Redux
+
+Experience:
+- Cedar Analytics — Frontend Engineer, 0 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.A. Information Systems, Lakeside University

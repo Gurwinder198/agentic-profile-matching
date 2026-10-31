@@ -1,0 +1,13 @@
+DevOps Engineer
+
+We are looking for a DevOps Engineer to own our cloud infrastructure.
+
+Must-have:
+- Strong experience with AWS
+- Experience with Docker
+- Experience building CI/CD pipelines
+
+Nice-to-have:
+- Experience with Kubernetes and Terraform
+- Experience with Linux administration
+- Familiarity with Ansible or Azure

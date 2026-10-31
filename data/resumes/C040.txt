@@ -1,0 +1,16 @@
+Name: Grace Young
+Candidate ID: C040
+Role: DevOps Engineer
+Years of Experience: 12
+
+Summary:
+DevOps Engineer with 12 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Linux, Azure, Jenkins, Terraform
+
+Experience:
+- Bluepeak Software — DevOps Engineer, 12 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- M.S. Computer Science, Lakeside University

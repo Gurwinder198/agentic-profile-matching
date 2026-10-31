@@ -1,0 +1,16 @@
+Name: Henry Nelson
+Candidate ID: C091
+Role: Frontend Engineer
+Years of Experience: 11
+
+Summary:
+Frontend Engineer with 11 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Vue, Next.js, TypeScript, Webpack, Tailwind CSS, Redux, GraphQL
+
+Experience:
+- Bluepeak Software — Frontend Engineer, 11 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.A. Information Systems, Riverside College

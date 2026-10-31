@@ -1,0 +1,16 @@
+Name: Henry Brown
+Candidate ID: C001
+Role: Frontend Engineer
+Years of Experience: 4
+
+Summary:
+Frontend Engineer with 4 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Tailwind CSS, Next.js
+
+Experience:
+- Northwind Labs — Frontend Engineer, 4 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.S. Computer Science, Lakeside University

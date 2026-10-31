@@ -1,0 +1,16 @@
+Name: Rosa Nelson
+Candidate ID: C045
+Role: DevOps Engineer
+Years of Experience: 10
+
+Summary:
+DevOps Engineer with 10 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Monitoring, Linux, Ansible
+
+Experience:
+- Alloy Digital — DevOps Engineer, 10 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Data Science, Lakeside University
