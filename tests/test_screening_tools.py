@@ -51,6 +51,33 @@ def test_compare_candidates_on_empty_list_returns_not_found_without_llm_call(mon
     assert "No matching candidates" in result["narrative"]
 
 
+def test_score_candidate_retries_on_internally_inconsistent_score(monkeypatch):
+    """The LLM occasionally returns score=0.0 despite high criteria_scores
+    and no gaps (observed in a real OpenRouter call) — score_candidate
+    must retry rather than trust a self-contradictory response."""
+    inconsistent = screening_tools.CandidateScore(
+        candidate_id="c1", score=0.0,
+        criteria_scores={"React": 90.0, "JavaScript": 85.0}, strengths=["Strong React"], gaps=[])
+    consistent = screening_tools.CandidateScore(
+        candidate_id="c1", score=88.0,
+        criteria_scores={"React": 90.0, "JavaScript": 85.0}, strengths=["Strong React"], gaps=[])
+    responses = iter([inconsistent, consistent])
+
+    class FakeStructuredModel:
+        def invoke(self, prompt):
+            return next(responses)
+
+    class FakeChatModel:
+        def with_structured_output(self, schema, method=None):
+            return FakeStructuredModel()
+
+    monkeypatch.setattr(screening_tools, "get_chat_model", lambda: FakeChatModel())
+
+    result = screening_tools.score_candidate(
+        {"must_have": [], "nice_to_have": [], "role_title": "", "seniority": ""}, "c1", "resume text")
+    assert result["score"] == 88.0
+
+
 @requires_api_key
 def test_generate_interview_questions_returns_at_least_three(sample_requirements):
     questions = screening_tools.generate_interview_questions(

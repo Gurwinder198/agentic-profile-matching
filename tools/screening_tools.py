@@ -68,7 +68,20 @@ def update_requirements(current_requirements: dict, new_instruction: str) -> dic
     return result.model_dump()
 
 
-def score_candidate(requirements: dict, candidate_id: str, resume_text: str) -> dict:
+def _score_is_plausible(data: dict) -> bool:
+    """The LLM occasionally returns an internally-inconsistent score (e.g.
+    score=0 despite high per-criterion scores and no gaps) — catch the
+    clearest case of that self-contradiction."""
+    criteria_scores = data.get("criteria_scores") or {}
+    if not criteria_scores:
+        return True
+    average = sum(criteria_scores.values()) / len(criteria_scores)
+    if data.get("score") == 0 and average >= 50:
+        return False
+    return True
+
+
+def score_candidate(requirements: dict, candidate_id: str, resume_text: str, max_attempts: int = 3) -> dict:
     """Score a single candidate's resume against the given requirements."""
     model = get_chat_model().with_structured_output(CandidateScore, method="function_calling")
     prompt = (
@@ -80,8 +93,13 @@ def score_candidate(requirements: dict, candidate_id: str, resume_text: str) -> 
         "0 to 100), a list of strengths, and a list of gaps. Set candidate_id "
         f"to exactly {candidate_id!r}."
     )
-    result = model.invoke(prompt)
-    return result.model_dump()
+    data = None
+    for _ in range(max_attempts):
+        result = model.invoke(prompt)
+        data = result.model_dump()
+        if _score_is_plausible(data):
+            return data
+    return data
 
 
 def _suggest_improvements(requirements: dict, scored: dict) -> list[str]:
