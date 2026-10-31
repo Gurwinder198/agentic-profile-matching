@@ -1,0 +1,16 @@
+Name: Uma Patel
+Candidate ID: C071
+Role: DevOps Engineer
+Years of Experience: 8
+
+Summary:
+DevOps Engineer with 8 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Ansible, Terraform
+
+Experience:
+- Bluepeak Software — DevOps Engineer, 8 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Computer Science, State University

@@ -1,0 +1,16 @@
+Name: Karen Garcia
+Candidate ID: C027
+Role: Backend Engineer
+Years of Experience: 0
+
+Summary:
+Backend Engineer with 0 years of experience in Python, REST APIs, SQL.
+
+Skills: Python, REST APIs, SQL, Java, Flask, PostgreSQL, Redis
+
+Experience:
+- Alloy Digital — Backend Engineer, 0 years
+  Worked on projects involving Python, REST APIs, SQL.
+
+Education:
+- B.S. Computer Science, State University

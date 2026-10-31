@@ -1,0 +1,16 @@
+Name: Liam Walker
+Candidate ID: C004
+Role: Frontend Engineer
+Years of Experience: 8
+
+Summary:
+Frontend Engineer with 8 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Vue, TypeScript
+
+Experience:
+- Northwind Labs — Frontend Engineer, 8 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.S. Data Science, State University

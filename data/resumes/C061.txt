@@ -1,0 +1,16 @@
+Name: Maria Cooper
+Candidate ID: C061
+Role: DevOps Engineer
+Years of Experience: 7
+
+Summary:
+DevOps Engineer with 7 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Monitoring, Kubernetes, Azure, Jenkins, Ansible
+
+Experience:
+- Riverstone Systems — DevOps Engineer, 7 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- M.S. Computer Science, Lakeside University

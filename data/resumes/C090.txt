@@ -1,0 +1,16 @@
+Name: Henry Hall
+Candidate ID: C090
+Role: Data Scientist
+Years of Experience: 11
+
+Summary:
+Data Scientist with 11 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, PyTorch, NLP, Pandas
+
+Experience:
+- Cedar Analytics — Data Scientist, 11 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- M.S. Computer Science, Riverside College

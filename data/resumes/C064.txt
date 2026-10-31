@@ -1,0 +1,16 @@
+Name: Isabel Smith
+Candidate ID: C064
+Role: Backend Engineer
+Years of Experience: 1
+
+Summary:
+Backend Engineer with 1 years of experience in Python, REST APIs, SQL.
+
+Skills: Python, REST APIs, SQL, Flask, PostgreSQL, Django, Redis
+
+Experience:
+- Cedar Analytics — Backend Engineer, 1 years
+  Worked on projects involving Python, REST APIs, SQL.
+
+Education:
+- M.S. Computer Science, Tech Institute

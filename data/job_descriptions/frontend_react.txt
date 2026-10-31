@@ -1,0 +1,13 @@
+Senior Frontend Engineer (React)
+
+We are looking for a Senior Frontend Engineer to join our product team.
+
+Must-have:
+- 3+ years of experience building production web applications
+- Strong hands-on experience with React
+- Proficiency in JavaScript, HTML, and CSS
+
+Nice-to-have:
+- Experience with TypeScript
+- Experience with Next.js or Redux
+- Familiarity with GraphQL

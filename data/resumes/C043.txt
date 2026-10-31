@@ -1,0 +1,16 @@
+Name: Tara Garcia
+Candidate ID: C043
+Role: Frontend Engineer
+Years of Experience: 14
+
+Summary:
+Frontend Engineer with 14 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Redux, Vue
+
+Experience:
+- Alloy Digital — Frontend Engineer, 14 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.A. Information Systems, Lakeside University

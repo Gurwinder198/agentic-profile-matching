@@ -1,0 +1,16 @@
+Name: Alice Kim
+Candidate ID: C037
+Role: Data Scientist
+Years of Experience: 8
+
+Summary:
+Data Scientist with 8 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, Deep Learning, SQL, PyTorch, TensorFlow
+
+Experience:
+- Bluepeak Software — Data Scientist, 8 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- M.S. Computer Science, State University

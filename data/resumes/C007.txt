@@ -1,0 +1,16 @@
+Name: Olivia Hall
+Candidate ID: C007
+Role: Backend Engineer
+Years of Experience: 8
+
+Summary:
+Backend Engineer with 8 years of experience in Python, REST APIs, SQL.
+
+Skills: Python, REST APIs, SQL, PostgreSQL, Microservices, Django, Flask, Redis, Go, Java
+
+Experience:
+- Cedar Analytics — Backend Engineer, 8 years
+  Worked on projects involving Python, REST APIs, SQL.
+
+Education:
+- B.A. Information Systems, Riverside College

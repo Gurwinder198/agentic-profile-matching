@@ -1,0 +1,16 @@
+Name: Bob Lee
+Candidate ID: C086
+Role: Frontend Engineer
+Years of Experience: 1
+
+Summary:
+Frontend Engineer with 1 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Tailwind CSS, TypeScript, Vue, Redux, Next.js, Webpack, GraphQL
+
+Experience:
+- Riverstone Systems — Frontend Engineer, 1 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- M.S. Computer Science, Riverside College

@@ -1,0 +1,16 @@
+Name: David Kim
+Candidate ID: C097
+Role: Frontend Engineer
+Years of Experience: 7
+
+Summary:
+Frontend Engineer with 7 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Next.js, Vue
+
+Experience:
+- Cedar Analytics — Frontend Engineer, 7 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.A. Information Systems, Lakeside University

@@ -1,0 +1,16 @@
+Name: Yusuf Patel
+Candidate ID: C092
+Role: Backend Engineer
+Years of Experience: 2
+
+Summary:
+Backend Engineer with 2 years of experience in Python, REST APIs, SQL.
+
+Skills: Python, REST APIs, SQL, Django, Microservices, Redis, PostgreSQL, Flask, Go, Java
+
+Experience:
+- Riverstone Systems — Backend Engineer, 2 years
+  Worked on projects involving Python, REST APIs, SQL.
+
+Education:
+- M.S. Computer Science, Lakeside University

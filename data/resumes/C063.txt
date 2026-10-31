@@ -1,0 +1,16 @@
+Name: Yusuf Torres
+Candidate ID: C063
+Role: Frontend Engineer
+Years of Experience: 9
+
+Summary:
+Frontend Engineer with 9 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Webpack, Tailwind CSS, Redux, GraphQL, TypeScript, Vue, Next.js
+
+Experience:
+- Northwind Labs — Frontend Engineer, 9 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.A. Information Systems, Riverside College

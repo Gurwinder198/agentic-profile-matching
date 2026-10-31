@@ -1,0 +1,16 @@
+Name: Carol Brown
+Candidate ID: C060
+Role: Data Scientist
+Years of Experience: 13
+
+Summary:
+Data Scientist with 13 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, Deep Learning, TensorFlow, SQL, Pandas, NLP, PyTorch
+
+Experience:
+- Alloy Digital — Data Scientist, 13 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- B.A. Information Systems, Lakeside University

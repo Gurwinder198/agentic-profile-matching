@@ -1,0 +1,16 @@
+Name: Henry Young
+Candidate ID: C082
+Role: DevOps Engineer
+Years of Experience: 1
+
+Summary:
+DevOps Engineer with 1 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Monitoring, Terraform, Azure, Linux
+
+Experience:
+- Riverstone Systems — DevOps Engineer, 1 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Data Science, Lakeside University

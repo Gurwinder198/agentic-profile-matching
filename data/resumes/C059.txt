@@ -1,0 +1,16 @@
+Name: Frank King
+Candidate ID: C059
+Role: Product Manager
+Years of Experience: 6
+
+Summary:
+Product Manager with 6 years of experience in Roadmapping, Agile, Stakeholder Management.
+
+Skills: Roadmapping, Agile, Stakeholder Management, Wireframing, JIRA, User Research, SQL, A/B Testing, Analytics
+
+Experience:
+- Riverstone Systems — Product Manager, 6 years
+  Worked on projects involving Roadmapping, Agile, Stakeholder Management.
+
+Education:
+- M.S. Computer Science, Riverside College

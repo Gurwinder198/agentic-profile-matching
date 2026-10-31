@@ -1,0 +1,16 @@
+Name: Carol Brown
+Candidate ID: C067
+Role: Backend Engineer
+Years of Experience: 3
+
+Summary:
+Backend Engineer with 3 years of experience in Python, REST APIs, SQL.
+
+Skills: Python, REST APIs, SQL, Redis, Go, PostgreSQL
+
+Experience:
+- Cedar Analytics — Backend Engineer, 3 years
+  Worked on projects involving Python, REST APIs, SQL.
+
+Education:
+- B.S. Data Science, Tech Institute

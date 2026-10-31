@@ -1,0 +1,16 @@
+Name: David Allen
+Candidate ID: C095
+Role: DevOps Engineer
+Years of Experience: 11
+
+Summary:
+DevOps Engineer with 11 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Jenkins, Ansible
+
+Experience:
+- Riverstone Systems — DevOps Engineer, 11 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Data Science, Riverside College

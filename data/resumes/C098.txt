@@ -1,0 +1,16 @@
+Name: Sam Reed
+Candidate ID: C098
+Role: DevOps Engineer
+Years of Experience: 4
+
+Summary:
+DevOps Engineer with 4 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Azure, Monitoring, Ansible, Linux
+
+Experience:
+- Alloy Digital — DevOps Engineer, 4 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Computer Science, Lakeside University

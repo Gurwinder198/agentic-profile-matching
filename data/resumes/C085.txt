@@ -1,0 +1,16 @@
+Name: Uma Rivera
+Candidate ID: C085
+Role: Data Scientist
+Years of Experience: 9
+
+Summary:
+Data Scientist with 9 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, Deep Learning, PyTorch, SQL, Pandas, TensorFlow, NLP, Scikit-learn
+
+Experience:
+- Bluepeak Software — Data Scientist, 9 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- B.S. Computer Science, Lakeside University

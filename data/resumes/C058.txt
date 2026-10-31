@@ -1,0 +1,16 @@
+Name: Henry Garcia
+Candidate ID: C058
+Role: DevOps Engineer
+Years of Experience: 8
+
+Summary:
+DevOps Engineer with 8 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Monitoring, Azure, Ansible, Jenkins, Terraform
+
+Experience:
+- Alloy Digital — DevOps Engineer, 8 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.A. Information Systems, Lakeside University

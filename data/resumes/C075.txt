@@ -1,0 +1,16 @@
+Name: Nathan Cooper
+Candidate ID: C075
+Role: Data Scientist
+Years of Experience: 15
+
+Summary:
+Data Scientist with 15 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, TensorFlow, NLP, Pandas, Scikit-learn, PyTorch
+
+Experience:
+- Riverstone Systems — Data Scientist, 15 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- B.S. Data Science, State University

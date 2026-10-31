@@ -1,0 +1,8 @@
+.venv*/
+data/chroma_db/
+data/checkpoints.sqlite
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.superpowers/

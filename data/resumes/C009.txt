@@ -1,0 +1,16 @@
+Name: Henry Reed
+Candidate ID: C009
+Role: DevOps Engineer
+Years of Experience: 8
+
+Summary:
+DevOps Engineer with 8 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Azure, Linux, Terraform, Jenkins, Kubernetes
+
+Experience:
+- Cedar Analytics — DevOps Engineer, 8 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Data Science, Lakeside University

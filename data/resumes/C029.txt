@@ -1,0 +1,16 @@
+Name: Victor Kim
+Candidate ID: C029
+Role: DevOps Engineer
+Years of Experience: 4
+
+Summary:
+DevOps Engineer with 4 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Azure, Jenkins, Ansible, Kubernetes, Monitoring, Terraform
+
+Experience:
+- Riverstone Systems — DevOps Engineer, 4 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Computer Science, State University

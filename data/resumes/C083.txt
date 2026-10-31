@@ -1,0 +1,16 @@
+Name: David Allen
+Candidate ID: C083
+Role: DevOps Engineer
+Years of Experience: 3
+
+Summary:
+DevOps Engineer with 3 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Monitoring, Azure, Terraform, Linux, Kubernetes, Jenkins, Ansible
+
+Experience:
+- Cedar Analytics — DevOps Engineer, 3 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Data Science, State University

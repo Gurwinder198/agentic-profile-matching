@@ -1,0 +1,16 @@
+Name: Bob Nguyen
+Candidate ID: C048
+Role: Frontend Engineer
+Years of Experience: 13
+
+Summary:
+Frontend Engineer with 13 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Vue, Next.js, Webpack, GraphQL, Redux
+
+Experience:
+- Alloy Digital — Frontend Engineer, 13 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.S. Computer Science, Lakeside University

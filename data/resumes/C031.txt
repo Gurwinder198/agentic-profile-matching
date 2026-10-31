@@ -1,0 +1,16 @@
+Name: Isabel Smith
+Candidate ID: C031
+Role: Frontend Engineer
+Years of Experience: 0
+
+Summary:
+Frontend Engineer with 0 years of experience in React, JavaScript, CSS.
+
+Skills: React, JavaScript, CSS, HTML, Tailwind CSS, Vue
+
+Experience:
+- Riverstone Systems — Frontend Engineer, 0 years
+  Worked on projects involving React, JavaScript, CSS.
+
+Education:
+- B.A. Information Systems, Riverside College

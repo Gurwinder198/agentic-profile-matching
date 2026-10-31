@@ -1,0 +1,16 @@
+Name: Grace Hall
+Candidate ID: C022
+Role: Backend Engineer
+Years of Experience: 1
+
+Summary:
+Backend Engineer with 1 years of experience in Python, REST APIs, SQL.
+
+Skills: Python, REST APIs, SQL, Java, Redis, Microservices
+
+Experience:
+- Bluepeak Software — Backend Engineer, 1 years
+  Worked on projects involving Python, REST APIs, SQL.
+
+Education:
+- B.S. Data Science, State University

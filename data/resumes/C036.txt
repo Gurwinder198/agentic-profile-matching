@@ -1,0 +1,16 @@
+Name: Victor Nguyen
+Candidate ID: C036
+Role: Data Scientist
+Years of Experience: 12
+
+Summary:
+Data Scientist with 12 years of experience in Python, Machine Learning, Statistics.
+
+Skills: Python, Machine Learning, Statistics, NLP, Scikit-learn, Deep Learning, Pandas
+
+Experience:
+- Riverstone Systems — Data Scientist, 12 years
+  Worked on projects involving Python, Machine Learning, Statistics.
+
+Education:
+- M.S. Computer Science, State University

@@ -1,0 +1,16 @@
+Name: Liam Nelson
+Candidate ID: C077
+Role: DevOps Engineer
+Years of Experience: 15
+
+Summary:
+DevOps Engineer with 15 years of experience in AWS, Docker, CI/CD.
+
+Skills: AWS, Docker, CI/CD, Terraform, Ansible
+
+Experience:
+- Alloy Digital — DevOps Engineer, 15 years
+  Worked on projects involving AWS, Docker, CI/CD.
+
+Education:
+- B.S. Computer Science, Tech Institute

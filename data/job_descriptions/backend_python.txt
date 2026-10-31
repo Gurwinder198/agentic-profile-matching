@@ -1,0 +1,13 @@
+Backend Engineer (Python)
+
+We are hiring a Backend Engineer to build and maintain our core services.
+
+Must-have:
+- Strong Python experience
+- Experience designing REST APIs
+- Solid SQL skills
+
+Nice-to-have:
+- Experience with Django or Flask
+- Experience with microservices architectures
+- Familiarity with PostgreSQL and Redis
